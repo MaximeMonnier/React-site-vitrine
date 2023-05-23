@@ -1,12 +1,16 @@
 import React from "react";
+import Navigation from "../components/Navigation";
+import Mouse from "../components/Mouse";
+import SocialNetwork from "../components/SocialNetwork";
 
 const Home = () => {
   return (
     <div>
-      <h1>HOME</h1>
+      <Mouse />
+      <SocialNetwork />
+      <Navigation />
     </div>
   );
 };
 
 export default Home;
-<h1>HOME</h1>;
