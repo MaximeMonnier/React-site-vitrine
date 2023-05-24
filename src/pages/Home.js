@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div>
       <Mouse />
-      <SocialNetwork />
       <Navigation />
+      <SocialNetwork />
     </div>
   );
 };
