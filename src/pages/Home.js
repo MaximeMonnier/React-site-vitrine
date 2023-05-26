@@ -14,7 +14,7 @@ const Home = () => {
         <SocialNetwork />
         <div className="home-main">
           <div className="main-content">
-            <h1>MONNIER AGENCY</h1>
+            <h1>M&M AGENCE</h1>
             <h2>
               <DynamicText />
             </h2>
