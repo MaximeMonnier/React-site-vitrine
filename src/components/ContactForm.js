@@ -24,7 +24,7 @@ const ContactForm = () => {
           console.log(result.text);
           form.current.reset();
           formMess.current.innerHTML =
-            "<p class='success'>Message envoyé !<p/>";
+            "<p className='success'>Message envoyé !<p/>";
           setTimeout(() => {
             formMess.current.textContent = "";
           }, 3000);
@@ -32,7 +32,7 @@ const ContactForm = () => {
         (error) => {
           console.log(error.text);
           formMess.current.innerHTML =
-            "<p class='error'>Nous-avons rencontrer un problème votre message n'a pas pu être envoyer !<p/>";
+            "<p className='error'>Nous-avons rencontrer un problème votre message n'a pas pu être envoyer !<p/>";
 
           setTimeout(() => {
             formMess.current.textContent = "";
