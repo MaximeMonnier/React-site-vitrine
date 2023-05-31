@@ -8,12 +8,13 @@ const Project = ({ projectNumber }) => {
   const [left, setLeft] = useState();
   const [top, setTop] = useState();
   const [size, setSize] = useState();
-
+  // annimation bubles of background
   useEffect(() => {
     setLeft(Math.floor(Math.random() * 200 + 700) + "px");
     setTop(Math.floor(Math.random() * 200 + 150) + "px");
     setSize("scale(" + (Math.random() + 0.7) + ")");
   }, []);
+  //aniamtion transiton pages on Project composant
   const variants = {
     initial: {
       opacity: 0,
@@ -33,6 +34,25 @@ const Project = ({ projectNumber }) => {
     ease: [0.03, 0.87, 0.073, 0.9],
     duration: 0.6,
   };
+  //aniamtion transiton pages on Project composant img random apparation
+  const imgAnimation = {
+    initial: {
+      opacity: 0,
+      x: Math.random() * 350 * (Math.random() > 0.4 ? 1 : -1),
+      y: Math.random() * 120 * (Math.random() > 0.4 ? 1 : -1),
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+    },
+    exit: {
+      opacity: 0,
+      x: 0,
+      y: 0,
+    },
+  };
+
   return (
     <motion.div
       className="project-main"
@@ -51,7 +71,14 @@ const Project = ({ projectNumber }) => {
           })}
         </ul>
       </div>
-      <div className="img-content">
+      <motion.div
+        className="img-content"
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ duration: 1.2 }}
+        variants={imgAnimation}
+      >
         <div className="img-container hover">
           <span>
             <h3>{currentProject.title}</h3>
@@ -68,7 +95,7 @@ const Project = ({ projectNumber }) => {
             <span className="button">Voire le site</span>
           </a>
         </div>
-      </div>
+      </motion.div>
       <span
         className="random-circle"
         style={{ left, top, transform: size }}
