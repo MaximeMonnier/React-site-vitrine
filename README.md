@@ -1,8 +1,12 @@
 # M&M AGENCY
 
-## The website that could represent my web agency if I had one or my next protfolio maybe
+## The website that could represent my web agency if I had one or my next portfolio maybe
 
 ![Alt text](<public/assets/img/Capture%20d%E2%80%99%C3%A9cran%20(245).png>)
+
+## Live Demo
+
+A live demo is available here https://prod-site-vitrine.vercel.app/
 
 ## How to use
 
@@ -14,7 +18,7 @@ To watch the project npm start
 
 ## How does it work ?
 
-This website work like slider.
+This website works like slider.
 
 # Technologies used
 
