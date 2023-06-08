@@ -1,3 +1,25 @@
+# M&M AGENCY
+
+## The website that could represent my web agency if I had one or my next protfolio maybe
+
+![Alt text](<public/assets/img/Capture%20d%E2%80%99%C3%A9cran%20(245).png>)
+
+## How to use
+
+Clone the repo https://github.com/MaximeMonnier/React-site-vitrine.git
+
+In you file with bash made npm install to install all the packages
+
+To watch the project npm start
+
+## How does it work ?
+
+This website work like slider.
+
+# Technologies used
+
+JavaScript, React 18.1.0 sass 1.62.1
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -38,15 +38,8 @@ const Contact = () => {
           <div className="address">
             <div className="content">
               <h4>adress</h4>
-              <CopyToClipboard text="0693323388" className="hover">
-                <p
-                  style={{ cursor: "pointer" }}
-                  className="clipboard"
-                  onClick={() => alert("Téléphone copié !")}
-                >
-                  0693323388
-                </p>
-              </CopyToClipboard>
+              <p>24 rue de la gare</p>
+              <p>39110 Andelot-en-montagne</p>
             </div>
           </div>
           <div className="phone">
@@ -82,7 +75,7 @@ const Contact = () => {
           </div>
           <SocialNetwork />
           <div className="credits">
-            <p>M&M - 2022</p>
+            <p>M&M - 2023</p>
           </div>
         </div>
         <Buttons left={"/projet-4"} />
